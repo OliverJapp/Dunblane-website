@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Dunblane Webpage</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial scale = 1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="Stylesheet.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="Nav" id="myTopnav">
+            <a href="https://salsafabric-pumatribune.codio-box.uk/Main/Home.html">Home</a>
+            <a href="https://salsafabric-pumatribune.codio-box.uk/Main/Community.html" class = "active">Community</a>
+            <a href="https://salsafabric-pumatribune.codio-box.uk/Main/History.html">History</a>
+            <a href="https://salsafabric-pumatribune.codio-box.uk/Main/Essential_experiences.html">Experiences</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-fa-bars"><img src="https://salsafabric-pumatribune.codio-box.uk/Main/Photos/Fa-fa-bar.png" alt="fa fa-bar" width="50" height="30"></i>
+            </a>
+        </div>
+        <!--
+            Added this from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp to create a resposive ui that looks more appealing on mobile.
+        -->
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "Nav") {
+                x.className += " clicked";
+            } else {
+                x.className = "Nav";
+            }
+            }
+        </script>
+        <div class = "container">
+            <div class = "row" style="background-color:#DCDCDC;">
+                <div class = "col-md-8">
+                    
+                    <p>Dunlane train station was established in 1848 and has three platforms<br><br>It has three platforms, one which serves as a terminus for trains from Glasgow (Queen Street) and Edinburgh, one which serves trains heading north to Perth, Dundee, Aberdeen and Inverness and the third that serves trains heading south to Glasgow and Edinburgh</p><br><a class = "link-button" href="https://www.scotrail.co.uk/plan-your-journey/stations-and-facilities/dbl">Dunblane train station</a>
+                </div>
+                <div class = "col-md-4">
+                    <img class="image-g1" src="https://salsafabric-pumatribune.codio-box.uk/Main/Photos/Dunblane%20Photos/IMG-20221101-WA0008.jpg" alt="Train station">
+                </div>
+            </div>
+            <div class="row" style="background-color:white;">
+                <div class = "col-md-6">
+                    <p>The Dunblane Centre is a purpose-built youth, family, arts, sports and community centre.<br><br> It was built after a community vote chose that option for money from a consolidation of several funds which were created in the aftermath of the 1996 tragedy.<br><br> It opened in 2004 and receives no state finance, relying on user revenue and fundraising</p><br><p>The Centre allows for community activity, and allows High schoolers to volunteer</p><br><a class = "link-button" href="https://dunblanecentre.co.uk/">Dunblane centre website</a>
+                </div>
+                <div class = "col-md-6">
+                    <img class="image-g1" src="https://salsafabric-pumatribune.codio-box.uk/Main/Photos/Dunblane%20Photos/IMG-20221101-WA0006.jpg" alt="Dunblane centre">
+                </div>
+            </div>  
+            <div class="row" style="background-color:#DCDCDC;">
+                <div class = "col-md-6" >
+                    <img class="image-g1" src="https://salsafabric-pumatribune.codio-box.uk/Main/Photos/Dunblane%20Photos/IMG-20221101-WA0009.jpg" alt="Golf club">
+                </div>
+                <div class = "col-md-6">
+                    <p>This quality parkland course provides an enjoyable and testing challenge for golfers of all abilities.<br><br> Designed by Major Cecil Hutchison and the famous James Braid, it's lush fairways and manicured greens, together with wonderful views in all directions, ensure a golfing experience not quickly forgotten.</p><br><a class = "link-button" href="http://www.dngc.co.uk/">Dunblane golf club</a>
+                </div>
+            </div>        
+        </div>
+    </body>
+</html>
